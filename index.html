@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/materialize.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Code Jam Canvas</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <head class="head">
+      <nav class="white lighten-5">
+        <div class="nav-wrapper">
+          <ul class="left hide-on-med-and-down">
+            <li><a href="#!"><i class="material-icons black-text text-darken-2">menu</i></a></li>
+          </ul>
+          <a href="#!" class="brand-logo black-text text-darken-2">CodeJam - Pallete</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="mobile.html"><i class="material-icons black-text text-darken-2">more_vert</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </head>
+    <main class="">
+      <!-- upper row -->
+      <div class="row"></div>
+      <div class="row">
+        <!-- cards column -->
+        <div class="col s2">
+          <div class="row">
+            <!-- first card -->
+            <div class="col s12">
+              <div class="card blue lighten-5">
+                <ul class="collection">
+                  <li class="collection-item"><img alt="" class="left-ico" src="./assets/icons/icons8-fill-color-24.png">Paint bucket</li>
+                  <li class="collection-item"><img alt="" class="left-ico" src="./assets/icons/icons8-color-dropper-24.png">Choose color</li>
+                  <li class="collection-item"><img alt="" class="left-ico" src="./assets/icons/icons8-drag-24.png">Move</li>
+                  <li class="collection-item"><img alt="" class="left-ico" src="./assets/icons/icon-share.png">Transform</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- second card -->
+            <div class="col s12">
+              <div class="card blue lighten-5">
+                <ul class="collection">
+                  <li class="collection-item"><div class="color-circle color-circle--green left-ico"></div>Current color</li>
+                  <li class="collection-item"><div class="color-circle color-circle--blue left-ico"></div>Prev color</li>
+                  <li class="collection-item"><div class="color-circle color-circle--red left-ico"></div>Red</li>
+                  <li class="collection-item"><div class="color-circle color-circle--blue left-ico"></div>Blue</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- workspace column -->
+        <div class="col s8 canvas-wrapper">
+          <canvas id="canvas" class="canvas" width="512" height="512"></canvas>
+        </div>
+        <!-- right cards column -->
+        <div class="col s2">
+          <div class="row">
+            <!-- right card -->
+            <div class="col s12">
+              <div class="card blue lighten-5">
+                <div class="collection">
+                  <a href="#!" id="smallBtn" class="collection-item canvas-btn">4x4</a>
+                  <a href="#!" id="bigBtn" class="collection-item canvas-btn">32x32</a>
+                  <a href="#!" id="imgBtn" class="collection-item canvas-btn">Image</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom row -->
+      <div class="row"></div>
+    </main>
+  </div>
+  <script src="./canvas.js"></script>
+</body>
+
+</html>

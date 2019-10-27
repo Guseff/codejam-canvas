@@ -1,0 +1,50 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.collection-item {
+  display: flex;
+  align-items: center;
+}
+
+.left-ico {
+  margin-right: 10px;
+}
+
+.color-circle {
+  height: 16px;
+  width: 16px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.color-circle--red {
+  background-color: red;
+}
+.color-circle--blue {
+  background-color: blue;
+}
+.color-circle--green {
+  background-color: green;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas-card {
+  margin: 0;
+  padding: 0;
+}
+
+.canvas {
+  width: 512px;
+  height: 512px;
+  border: 2px solid #e0e0e0;
+}
+
+.collection a.canvas-btn {
+  color: rgba(0,0,0,0.87);
+}
